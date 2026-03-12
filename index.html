@@ -433,6 +433,17 @@
 
     .space-featured-img:hover .img-placeholder { transform: scale(1.03); }
 
+    .space-featured-img img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 1.4s ease;
+    }
+
+    .space-featured-img:hover img { transform: scale(1.03); }
+
     .space-featured-content {
       padding: 60px 64px;
       display: flex;
@@ -543,6 +554,17 @@
     }
 
     .space-small-img:hover .img-placeholder { transform: scale(1.03); }
+
+    .space-small-img img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 1.4s ease;
+    }
+
+    .space-small-img:hover img { transform: scale(1.03); }
 
     .space-small-content {
       padding: 40px 44px 48px;
@@ -1039,10 +1061,10 @@
       <!-- Space 01 – Featured -->
       <article class="space-featured fade-in" aria-label="Projekt: Villa am See">
         <div class="space-featured-img">
-          <div class="img-placeholder"
-            data-description="CUBIC Space – Weitläufige Outdoor-Küche mit dunklem Naturstein und Edelstahl, Pool im Hintergrund, Abendlicht, Privatvilla Südeuropa"
-            style="aspect-ratio:4/3; width:100%;">
-          </div>
+          <img
+            src="project-image.jpeg"
+            alt="CUBIC Space – Weitläufige Outdoor-Küche mit dunklem Naturstein und Edelstahl, Pool im Hintergrund, Abendlicht, Privatvilla Südeuropa"
+          />
         </div>
 
         <div class="space-featured-content">
@@ -1078,10 +1100,10 @@
 
         <article class="space-small fade-in" aria-label="Projekt: Penthouse Terrasse">
           <div class="space-small-img">
-            <div class="img-placeholder"
-              data-description="CUBIC Space – Stadtterrasse auf Penthouse-Ebene, geometrische Outdoor-Küche in anthrazitfarbenem Edelstahl, Skyline im Hintergrund, Berlin"
-              style="aspect-ratio:4/3;">
-            </div>
+            <img
+              src="project-image.jpeg"
+              alt="CUBIC Space – Stadtterrasse auf Penthouse-Ebene, geometrische Outdoor-Küche in anthrazitfarbenem Edelstahl, Skyline im Hintergrund, Berlin"
+            />
           </div>
           <div class="space-small-content">
             <span class="space-meta">Space 02 — Berlin, 2023</span>
@@ -1108,10 +1130,10 @@
 
         <article class="space-small fade-in" aria-label="Projekt: Landhaus Steiermark">
           <div class="space-small-img">
-            <div class="img-placeholder"
-              data-description="CUBIC Space – Outdoor-Küche integriert in Gartenanlage eines österreichischen Landhauses, heller Kalkstein, Weinreben, natürliches Tageslicht, Steiermark"
-              style="aspect-ratio:4/3;">
-            </div>
+            <img
+              src="project-image.jpeg"
+              alt="CUBIC Space – Outdoor-Küche integriert in Gartenanlage eines österreichischen Landhauses, heller Kalkstein, Weinreben, natürliches Tageslicht, Steiermark"
+            />
           </div>
           <div class="space-small-content">
             <span class="space-meta">Space 03 — Steiermark, 2023</span>
