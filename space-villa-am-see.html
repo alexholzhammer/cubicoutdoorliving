@@ -329,7 +329,23 @@
       line-height: 1.0;
       color: var(--text-primary);
       letter-spacing: -0.01em;
+      margin-bottom: 40px;
     }
+
+    .space-hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      transition: opacity 0.3s;
+    }
+
+    .space-hero-cta:hover { opacity: 0.7; }
 
     /* ─── INTRO / STORY ──────────────────────────────────────────────── */
     .space-intro {
@@ -1042,10 +1058,11 @@
     <!-- ─── HERO ──────────────────────────────────────────────────────── -->
     <section class="space-hero" aria-label="Villa am See – Hero">
       <div class="space-hero-bg">
-        <div class="img-placeholder"
-          data-description="Villa am See – Weitläufige Outdoor-Küche bei Abenddämmerung. Dunkler Naturstein, integrierter Grill, Blick auf stillen See im Hintergrund. Warmes Licht, luxuriöse Privatvilla."
-          style="width:100%;height:100%;position:absolute;inset:0;">
-        </div>
+        <img
+          src="hero-bg.jpeg"
+          alt="CUBIC Outdoor-Küche – Villa am See, dunkler Naturstein, Edelstahl, Abenddämmerung"
+          style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"
+        />
       </div>
       <div class="space-hero-gradient" aria-hidden="true"></div>
 
@@ -1053,6 +1070,14 @@
         <a href="index.html#spaces" class="space-hero-breadcrumb">← Spaces</a>
         <span class="space-hero-label">Space 01 — München, 2024</span>
         <h1 class="space-hero-headline">Villa am See</h1>
+        <a href="#space-brief" class="space-hero-cta">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M7 1v8M4 6l3 3 3-3" stroke="#C9A96E" stroke-width="1" stroke-linecap="square"/>
+            <path d="M1 11h12v2H1z" fill="#C9A96E" opacity="0.25"/>
+            <path d="M1 13h12" stroke="#C9A96E" stroke-width="1"/>
+          </svg>
+          Projektdetails herunterladen
+        </a>
       </div>
     </section>
 
@@ -1100,26 +1125,34 @@
 
       <!-- Block A – Vollbreite 16:6 -->
       <div class="space-img-fullbleed">
-        <div class="img-placeholder"
-          data-description="Panorama: Gesamtansicht der Terrassenanlage mit CUBIC Outdoor-Küche, Naturstein-Bodenbelag, Pool-Kante, Abendstimmung">
-        </div>
+        <img
+          src="project-image.jpeg"
+          alt="Panorama: Gesamtansicht der Terrassenanlage mit CUBIC Outdoor-Küche, Naturstein-Bodenbelag, Abendstimmung"
+          style="width:100%;aspect-ratio:16/6;object-fit:cover;object-position:center;display:block;"
+        />
       </div>
 
       <!-- Block B – 2-spaltig, hochkant 3:4 -->
       <div class="space-img-duo">
-        <div class="img-placeholder"
-          data-description="Detailaufnahme: Offene Schublade des CUBIC Moduls, gebürsteter Edelstahl, präzise Schweißnaht, weiches Seitenlicht">
-        </div>
-        <div class="img-placeholder"
-          data-description="Detailaufnahme: Oberfläche Naturstein-Arbeitsplatte, Messing-Armatur, ein Weinglas – Abendlicht wirft langen Schatten">
-        </div>
+        <img
+          src="project-image.jpeg"
+          alt="Detailaufnahme: Offene Schublade des CUBIC Moduls, gebürsteter Edelstahl, präzise Schweißnaht, weiches Seitenlicht"
+          style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;display:block;"
+        />
+        <img
+          src="project-image.jpeg"
+          alt="Detailaufnahme: Oberfläche Naturstein-Arbeitsplatte, Messing-Armatur, ein Weinglas – Abendlicht wirft langen Schatten"
+          style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;display:block;"
+        />
       </div>
 
       <!-- Block C – Vollbreite 16:7 -->
       <div class="space-img-fullbleed-wide">
-        <div class="img-placeholder"
-          data-description="Nachtaufnahme: Beleuchtete CUBIC Outdoor-Küche, warmes Unterbaulicht, Reflexion im Pool, Sternenhimmel angedeutet">
-        </div>
+        <img
+          src="project-image.jpeg"
+          alt="Nachtaufnahme: Beleuchtete CUBIC Outdoor-Küche, warmes Unterbaulicht, Reflexion im Pool"
+          style="width:100%;aspect-ratio:16/7;object-fit:cover;object-position:center;display:block;"
+        />
       </div>
 
     </div>
@@ -1307,9 +1340,11 @@
     <section class="next-space fade-in" aria-label="Nächster Space">
 
       <div class="next-space-img">
-        <div class="img-placeholder"
-          data-description="Vorschau: Moderner Terrassengarten mit CUBIC Outdoor-Küche, alpine Kulisse, Lärche und Cortenstahl">
-        </div>
+        <img
+          src="project-image.jpeg"
+          alt="Vorschau: Moderner Terrassengarten mit CUBIC Outdoor-Küche, alpine Kulisse, Lärche und Cortenstahl"
+          style="width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center;display:block;"
+        />
       </div>
 
       <div class="next-space-content">
